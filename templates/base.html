@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Briefly</title>
+        <link rel="shortcut icon" href="/static/favicon.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <a name="top"></a>
+        <div class="container" >
+        <nav class="navbar navbar-light bg-light" class="h-30">
+            <h3><a style=" color: #0b6df9; font-weight: 1500" class="nav-link" href="{{url_for('home')}}"><img src="/static/Briefly_icon.png" ></a></h3>
+        </nav>
+        </div>
+
+          <div class="column">
+          {% block content %}
+          {% endblock %}
+          </div>
+        <div class="row">
+            <div class="col-sm-6 mb-3 mb-md-0" style="max-width: 650px;">
+                <div class="row">
+                    <div class="col-sm-6">
+                          <img src="/static/profile.jpg" class="card-img" alt="...">
+                          <p style="color: #2b2727; font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 26px; margin: 0;"><img src="/static/calls.png" >+91-8792347139</p>
+                          <p style="color: #2b2727; font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 26px; margin: 0;"><img src="/static/mails.png" >rajeevmishra1689@gmail.com</p>
+                    </div>
+                    <div class="col-sm-6" style= "background: #292929;">
+                        <div class="card-body">
+                            <h5 style="color: #c9d0d4; font-family: 'Helvetica Neue', sans-serif; font-size: 30px; font-weight: 100; line-height: 50px; letter-spacing: 1px; padding: 0 0 40px; border-bottom: double #555";class="card-title ">Rajeev Mishra</h5>
+                                <p class="card-text" style="color: #bbc3c8; font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 26px; margin: 0;">I am Data Scientist who loves to build and deploy Machine Learning, Deep Learning, Computer Vision and NLP Models.</p>
+                                </br>
+                                <p style="color: #bbc3c8; font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 26px; margin: 0;">Contact me @</p>
+                                    <a href="https://www.linkedin.com/in/rajeev-mishra-086789148/" target="_blank"><img src="/static/lnkdn.png" ></a>
+                                    <a href="https://www.kaggle.com/spidyweb" class="btn btn-primary" target="_blank">Kaggle</a>
+                                    <a target="_blank" href="https://github.com/mishra-rajeev/Briefly"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png" />View source on GitHub</a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-6">
+                  <div class="card">
+                      <div class="card-body" style= "background: #292929;">
+                          <h5 style="color: #c9d0d4; font-family: 'Helvetica Neue', sans-serif; font-size: 30px; font-weight: 100; line-height: 50px; letter-spacing: 1px; padding: 0 0 40px; border-bottom: double #555;class="card-title">My other NLP Projects</h5>
+                              <p style="color: #bbc3c8; font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 26px; margin: 0;">Check out Movie Recommendation Model</p>
+                                  <a href="https://a-movie-recommendation-app.herokuapp.com/" class="btn btn-primary" target="_blank">Netflix and Chill</a>
+                              <p style="color: #bbc3c8; font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 26px; margin: 0;">Check out my Spell Corrector Model</p>
+                                  <a href="https://spell-corrector-app.herokuapp.com/" class="btn btn-primary" target="_blank">Spell Corrector Model</a>
+                              <p style="color: #bbc3c8; font-family: 'Verdana', sans-serif; font-size: 16px; line-height: 26px; margin: 0;">Check out my Spam Detection Model</p>
+                                  <a href="https://spam-detection-model.herokuapp.com/" class="btn btn-primary" target="_blank">Spam Detection Model</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>

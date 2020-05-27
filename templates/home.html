@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-6 mb-3 mb-md-0" >
+        <div class="card">
+            <div class="card-body" style= "background: #292929;">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <h1 style=" color: #F90B6D; font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 900; line-height: 30px; margin: 0 0 12px;">Looking for a summary on any Topic!!!</h1>
+                <h3 style=" color: #F90B6D; font-family: 'Open Sans', sans-serif; font-size: 18px; font-weight: 300; line-height: 30px; margin: 0 0 12px;">Briefly provides summary from wikipedia for you...</h3>
+                <h3 style=" color: #F90B6D; font-family: 'Open Sans', sans-serif; font-size: 15px; font-weight: 300; line-height: 30px; margin: 0 0 12px;">Enter your Topic below... e.g. Narendra Modi, India, Delhi Sultanate, Gondwana, Latitude, Arctic Circle, Obama, Sachin Tendulkar, Einstein, NASA, ISRO, Gross domestic product, Coronavirus, Oncology, Body mass index...</h3>
+            </div>
+                <form action="{{url_for('summarize')}}">
+                    <input type="text" name="text" class="form-control" placeholder="Type your 'Topic' here to get summary..." required>
+                    <br>
+                    <input type="submit" class="btn btn-info" value="Enter">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
